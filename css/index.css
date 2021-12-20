@@ -1,0 +1,104 @@
+*
+{
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.board
+{
+    width: 40%;
+    height: 85%;
+    border-spacing: 10px;
+    margin-top: 10px;
+}
+
+.row, .cell
+{
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.head
+{
+    height: 30px;
+}
+
+.arrow
+{
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+.arrow-down
+{
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.winner
+{
+    display: none;
+}
+
+.players
+{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: -4%;
+}
+
+.player-names
+{
+    margin-left: 300px;
+}
+
+.names
+{
+    border: 2px solid black;
+}
+
+#name1
+{
+    background-color: red;
+}
+
+.title
+{
+    color: #DD7322;
+    margin-left: 400px;
+}
+
+.winner-name
+{
+    display: inline-block;
+    margin: 0;
+    color: #DD7322;
+}
+
+.new-game
+{
+    float: right;
+    margin-left: 40px;
+    background-color: #DD7322;
+    color: #FFF;
+    border-radius: 4px;
+    width: 100px;
+    height: 40px;
+}
+
+body
+{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+}
